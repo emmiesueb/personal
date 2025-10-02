@@ -20,8 +20,8 @@
                         <div style="padding-left: 20%;">
                             <p style="color: #f6dcac;"><img src="./assets/phone.png"> (606)922-2232</p>
                             <a style="text-decoration: none; color: #f6dcac;" href="mailto:emmiesueb@gmail.com"><img src="./assets/email.png"/> emmiesueb@gmail.com</a><br><br>
-                            <a style="text-decoration: none; color: #f6dcac;" href="https://www.linkedin.com/in/emily-bradley-dehaan-b84694208/" target="blank"><img src="./assets/LI-In-Bug.png" style="width: 40px;"/> Emily Bradley</a> <br><br>
-                            <a style="text-decoration: none; color: #f6dcac;" href="https://github.com/em-bd" target="blank"><img src="./assets/github-mark.png" style="width: 40px;"/> em-bd</a>
+                            <a style="text-decoration: none; color: #f6dcac;" href="https://www.linkedin.com/in/emily-bradley-b84694208/" target="blank"><img src="./assets/LI-In-Bug.png" style="width: 40px;"/> Emily Bradley</a> <br><br>
+                            <a style="text-decoration: none; color: #f6dcac;" href="https://github.com/emmiesueb" target="blank"><img src="./assets/github-mark.png" style="width: 40px;"/> emmiesueb</a>
                         </div>
                     </div>
                     </div>
@@ -85,10 +85,6 @@
                     <h2 style="font-size: 40px;">Projects</h2>
                     <div class="project">
                         <h3>Pumpkin Tracker</h3>
-                        <div style="text-align: center;">
-                            <img src="./assets/pumpkin_tracker.png" width="70%;"/>
-                            <p style="font-style: italic; text-align: center;">Stencil Selection page for Pumpkin Tracker</p>
-                        </div>
                         <p> Every year, Reiman Gardens hosts a Spirit of the Gardens event in October, where 1200+ pumpkins are carved and displayed 
                             for each week of the event. Volunteers are requested to help cut out stencils, trace stencils onto pumpkins, and carve them.                            
                             All pumpkin statuses are stored in a single excel sheet, where Admins must manually adjust the statuses of each stencil&mdash;whether
@@ -98,37 +94,60 @@
                             which means that week or those weeks will be when the pumpkin with that stencil is displayed. As the stencil database keeps growing, 
                             this process is becoming increasingly time-consuming due to searching through a single excel sheet.
                             <br> <br>
-                            To aid with this issue, my team currently working with Nathan Brockman&mdash;one of the faculty members at Reiman Gardens&mdash;to develop an 
+                            To aid with this issue, my team is currently working with Nathan Brockman&mdash;one of the faculty members at Reiman Gardens&mdash;to develop an 
                             app called "Pumpkin Tracker" to make tracking event information quick, accurate, and easy. Pumpkin Tracker facilitates the various
                             interactions with the stencil database by allowing Event Admins to easily add, delete, update, and archive stencils with the simple 
                             click of a few buttons or input from a barcode scanner as opposed to manually editing a row in an excel sheet that contains 1600+ entries.
                             On the Admin side, there are pages for Login, Event Management, Stencil Selection, and Stencil Management. The Volunteer side was designed
                             to assist in informing the Event Admins of the tracing and carving statuses of the stencils for each week. 
                             <br> <br>
-                            An Admin Login page was implemented to prevent any malicious actors from gaining access to the stencil database and
-                            manipulating the data. A password that is only provided to the Event Admins must be inputted to gain any access to the features provided
-                            by the Pumpking Tracker's Admin side. Once verified, Admin users will be taken to the Stencil Selection page. The Stencil Selection page will
-                            visualize the stencil data from the stencil database and provides both search functionality by ID or name and filtering functionality by week
-                            selected and/or category. Event Admins can also add, delete, and update categories or stencils via the Stencil Selection page. A batch update
-                            option is available, where a stencil can be selected or unselected for the designated week by either typing the stencil ID or scanning a barcode
-                            of the stencil ID. Event Admins can also navigate to the Event Management page to edit the current event, which can be set for 1-3 weeks. An event
-                            can be cancelled or ended upon completion, which ending the event will save data collected for future calculations. The Stencil Management page
-                            can also be navigated to on the Admin side, which visualizes stencil week data&mdash;this data includes printed, cut, traced, and carved statuses
-                            for each week a stencil has been selected. Stencil Management also offers search functionality by ID or name and filtering functionality by
-                            week selected, step status, or a specific step. A progress bar also indicates how many stencils out of the total stencils selected have been 
-                            completed depending on the step and week the data is being filtered by. A batch update option called Quick Update was implemented to allow
-                            Event Admins to, similar
-                            <br> <br>
-                            The Volunteer side is the landing page for the application. At the event, Event Volunteers are provided a QR code that will automatically
-                            take them to the Stencil Input page of the Volunteer side. Event Volunteers will take the stencil ID provided on the stencil they chose,
-                            input it into the text box, and be taken to a Confirmation page where they will either Confirm that is the stencil they have or go back
-                            to correct the stencil ID. The next step will be selecting whether the 
-                            <br> <br>
                             I am primarily working on Frontend for the development of the Mobile and Web Application, which is being set up as a 
                             React app. This involves working extensively with ReactDOM, JavaScript, and HTML/CSS. Our database is being hosted on a DigitalOcean
                             droplet we deemed appropriate for our applications needs, with the engine running on SQLite. Our team adopted an Agile project development 
                             style since we need to present each design iteration to our client, Nathan Brockman, to receive feedback on user satisfaction and conduct 
                             continuous software testing as we integrate new features.
+                            <br>
+                            <div style="text-align: center;">
+                                <img src="./assets/pumpkin_tracker_volunteer_stencil_input.png" width="70%"/>
+                                <p style="font-style: italic; text-align: center;">Volunteer Stencil Input page for Pumpkin Tracker</p>
+                            </div>
+                            The Volunteer side is the landing page for the application. At the event, Event Volunteers are provided a QR code that will automatically
+                            take them to the Stencil Input page of the Volunteer side. Event Volunteers will take the stencil ID provided on the stencil they chose,
+                            input it into the text box, and be taken to a Confirmation page where they will either Confirm that is the stencil they have or go back
+                            to correct the stencil ID. The next step will be selecting whether the 
+                            <br> <br>
+                            An Admin Login page was implemented to prevent any malicious actors from gaining access to the stencil database and
+                            manipulating the data. A password that is only provided to the Event Admins must be inputted to gain any access to the features provided
+                            by the Pumpking Tracker's Admin side. Once verified, Admin users will be taken to the Stencil Selection page.
+                            <br> <br>
+                            <div style="text-align: center;">
+                                <img src="./assets/pumpkin_tracker_stencil_selection.png" width="70%;"/>
+                                <p style="font-style: italic; text-align: center;">Stencil Selection page for Pumpkin Tracker</p>
+                            </div>
+                            The Stencil Selection page will visualize the stencil data from the stencil database and provides both search functionality by ID or name and filtering
+                            functionality by week selected and/or category. Event Admins can also add, delete, and update categories or stencils via the Stencil Selection page. 
+                            A batch update option known as Quick Select is available, where a stencil can be selected or unselected for the designated week by either typing the stencil 
+                            ID or scanning a barcode of the stencil ID. 
+                            <br> <br>
+                            <div style="text-align: center;">
+                                <img src="./assets/pumpkin_tracker_event_management.png" width="70%;"/>
+                                <p style="font-style: italic; text-align: center;">Event Management page for Pumpkin Tracker</p>
+                            </div>
+                            Event Admins can also navigate to the Event Management page to edit the current event, which can be set for 1-3 
+                            weeks. An event can be cancelled or ended upon completion, which ending the event will save data collected for future calculations. Events are used
+                            by determining what weeks a stencil can be selected for if it is not archived.
+                            <br> <br>
+                            <div style="text-align: center;">
+                                <img src="./assets/pumpkin_tracker_stencil_management.png" width="80%;"/>
+                                <p style="font-style: italic; text-align: center;">Stencil Management page for Pumpkin Tracker</p>
+                            </div>
+                            The Stencil Management page on the Admin side visualizes stencil week data&mdash;this data includes printed, cut, traced, and carved statuses
+                            for each week a stencil has been selected. Each step status is valued 0-3, with each status value meaning Not Started (0), In Progress (1), Completed 
+                            but not Confirmed (2), and Completed and Confirmed (3). Stencil Management also offers search functionality by ID or name and filtering functionality by
+                            week selected, step status, or a specific step. A progress bar also indicates how many stencils out of the total stencils selected have been 
+                            completed depending on the step and week the data is being filtered by. A batch update option called Quick Update was implemented to allow
+                            Event Admins to, similar to the Quick Select function, where stencil week statuses can be updated after manually typing in an ID or scanning
+                            a barcode containing the stencil ID.
                         </p>
                     </div>
                     <div class="project">
