@@ -1,0 +1,84 @@
+body {
+    font-family: 'Lucida Console', monospace;
+    background-image: url(./assets/background.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-attachment:fixed;
+}
+
+nav {
+    text-align: center;
+}
+
+nav a   {
+    text-decoration: none;
+    color: #520a90;
+    font-family: 'Lucida Console', monospace;
+}
+
+img {
+    max-width: 100%;
+}
+
+footer  {
+    text-align: center;
+    margin: 15px;
+    padding: 10px;
+    background-color: #520a90;
+    color: #FFF;
+}
+
+li {
+    list-style-type: square;
+}
+
+li::marker {
+    color:#bb5900;
+}
+
+.container  {
+    max-width: 90%;
+    padding: 40px;
+    background-color: #f6dcac;
+}
+
+.project    {
+    margin-bottom: 20px;
+    border: 3px solid #520a90;
+    padding: 20px;
+}
+
+h2 {
+    font-weight: bold;
+    color: #520a90;
+    text-shadow: -2px 2px 0 #ff7900,
+                 -4px 4px 0 #ffc000;
+}
+
+h3 {
+    font-family: 'Lucida Console', monospace;
+    font-style: oblique;
+    color: #bb5900;
+}
+
+h3 a {
+    text-decoration: none;
+    color: #bb5900;
+}
+
+h4 {
+    font-weight: bold;
+}
+
+.retro-box {
+    border: 3px solid #520a90; 
+    background-color: #f6dcac; 
+    padding: 10px;
+    box-shadow: -3px 3px 0 #ff7900,
+                -6px 6px 0 #ffc000;
+}
+
+.content-container {
+    background-color: #ff7900;
+    padding: 30px 0px;
+}
