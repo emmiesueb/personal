@@ -1,6 +1,17 @@
+@font-face {
+  font-family: 'Silkscreen'; 
+  src: url('assets/fonts/Silkscreen-Regular.ttf') format('truetype'); 
+}
+
+@font-face {
+    font-family: 'Jersey20';
+    src: url('assets/fonts/Jersey20-Regular.ttf') format('truetype');
+}
+
 body {
-    font-family: 'Lucida Console', monospace;
-    background-image: url(./assets/background.jpg);
+    font-family:'Jersey20';
+    font-size: 18px;
+    background-image: url(./assets/imgs/background.jpg);
     background-repeat: no-repeat;
     background-size: 100%;
     background-attachment:fixed;
@@ -13,7 +24,6 @@ nav {
 nav a   {
     text-decoration: none;
     color: #520a90;
-    font-family: 'Lucida Console', monospace;
 }
 
 img {
@@ -48,7 +58,14 @@ li::marker {
     padding: 20px;
 }
 
+h1 {
+    font-family: 'Silkscreen';
+    padding-top: 10px;
+    color: #f6dcac;
+}
+
 h2 {
+    font-family: 'Silkscreen';
     font-weight: bold;
     color: #520a90;
     text-shadow: -2px 2px 0 #ff7900,
@@ -56,7 +73,7 @@ h2 {
 }
 
 h3 {
-    font-family: 'Lucida Console', monospace;
+    font-family: 'Silkscreen';
     font-style: oblique;
     color: #bb5900;
 }
